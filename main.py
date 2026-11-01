@@ -14,7 +14,7 @@ storage = DatasetStorage()
 
 @app.get("/health", response_model=HealthResponse)
 def health_check():
-    return HealthResponse(status="healthy", version="1.0.0")
+    return HealthResponse(status="ok", version="1.0.0")
 
 
 @app.post("/upload", response_model=DatasetInfo)
